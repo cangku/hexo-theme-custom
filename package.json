@@ -1,0 +1,30 @@
+{
+  "name": "hexo-theme-custom",
+  "version": "1.0.1",
+  "private": false,
+  "devDependencies": {
+    "node-sass": "*",
+    "gulp": "*",
+    "gulp-minify-css": "*",
+    "gulp-sass": "*"
+  },
+  "description": "do the hexo theme for unofficial's blog",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cangku/hexo-theme-custom.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme"
+  ],
+  "author": "unofficial",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cangku/hexo-theme-custom/issues"
+  },
+  "homepage": "https://github.com/cangku/hexo-theme-custom#readme"
+}

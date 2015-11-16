@@ -1,0 +1,36 @@
+::selection {
+    background: $selectionBg;
+    color: $selectionColor;
+}
+::-webkit-scrollbar-track-piece{background-color:#fff;}
+::-webkit-scrollbar-thumb{background:#fff;}
+::-webkit-scrollbar{width:0}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.6;
+  margin: 1.5em 0 .5em;
+}
+html {
+  font-size: 100%;
+}
+pre {
+  font-family: $font-family;
+}
+ul {
+  list-style: none;
+}
+//clearfix
+.clearfix {
+  @include clearfix;
+}

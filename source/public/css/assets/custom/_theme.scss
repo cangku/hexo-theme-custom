@@ -1,0 +1,173 @@
+body {
+	font-family: $font-family, sans-serif;
+	line-height: $line-height;
+	color: $black;
+	background-color: $white;
+	font-size: $font-size;
+}
+header {
+		@extend .clearfix;
+}
+.full-width, footer, header {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+/* .full-width {
+	transition: background .4s;
+	&:hover {
+		background: $hoverBg;
+	}
+} */
+.wrapper {
+	margin: 0 1em;
+	@extend .clearfix;
+	section {
+		width: 80%;
+		margin: 0 auto;
+		font-size: $font-size;
+		text-align: center;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+.logo {
+	display: block;
+	float: left;
+	height: 100%;
+	padding: .75em 0;
+	margin: .4em 0;
+}
+.nav {
+	float: right;
+	padding: .75em 0;
+	ul {
+		@extend .clearfix;
+		li {
+			float: left;
+			a {
+				display: block;
+				padding: .4em .9em;
+			}
+		}
+	}
+}
+.align-center {
+	text-align: center;
+}
+
+.pusher {
+	section {
+			text-align: left;
+	}
+}
+h2 {
+	font-size: 1.8em;
+	text-align: center;
+	display: inline-block;
+	padding-bottom: 0.2em;
+	border-bottom: 2px solid $pink;
+	width: auto;
+	text-align: left;
+}
+
+.button {
+	background: #000;
+	color: #fff;
+	display: inline-block;
+	margin: 1em;
+	text-align: center;
+	height: 100%;
+	padding: .5em 1em;
+	transition: background .3s;
+}
+.button:hover {
+	background: $pink;
+    color: $white;
+}
+
+
+//post
+.post-info {
+	text-align: center;
+	.tag-list, .category-list {
+		display: inline-block;
+		.tag-list-link, .category-list-link {
+			background: #eee;
+			color: #4d4d4c;
+			padding: 2px 5px;
+		}
+	}
+}
+.post-con {
+	text-align: left;
+}
+
+//pagination
+.pagination {
+	text-align: center;
+	li {
+		display: inline-block;
+	}
+}
+#pagination ul {
+	margin: 2em 0;
+	@extend .clearfix;
+}
+#prev {
+	float: left;
+}
+#next {
+	float: right;
+}
+
+//footer
+footer {
+	padding: 4em 0;
+	text-align: center;
+}
+
+@media (min-width: 1024px) {
+	.container {
+		padding: 2em;
+	}
+	.copyright {
+		color: #888;
+		font-size: .9em;
+		padding-top: .5em;
+	}
+	.fixed {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: -1;
+		section.bg {
+			height: 100vh;
+			background: url(../img/fixedBg.jpg) 50% 50% no-repeat;
+		}
+	}
+	.pusher {
+		margin-bottom: 450px;
+	}
+}
+@media screen and (max-width: 680px) {
+	.wrapper, .logo {
+		margin: 0 auto;
+	}
+	.logo, .nav {
+		float: none;
+		padding: 0;
+		text-align: center;
+	}
+	.nav ul {
+		display: inline-block;
+		li {
+			border: 1px solid #333;
+			&:nth-of-type(n+2) {
+				border-left: none;
+			}
+		}
+	}
+}
