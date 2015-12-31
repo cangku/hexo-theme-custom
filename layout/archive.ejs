@@ -1,5 +1,7 @@
 <% page.posts.each(function(page) { %>
-<%- partial('_partial/p', {index: true, page: page, archive: is_archive()}) %>
+  <% if(page.isIndex !== 0) { %>
+  <%- partial('_partial/p', {index: true, page: page, archive: is_archive()}) %>
+  <% } %>
 <% }) %>
 <%
   //var page.total = 50; //模拟

@@ -15,5 +15,7 @@
 	</div>
 </div>
 <% page.posts.each(function(page) { %>
-<%- partial('_partial/p', {index: true, page: page}) %>
+	<% if(page.isIndex !== 0) { %>
+	<%- partial('_partial/p', {index: true, page: page}) %>
+	<% } %>
 <% }) %>
